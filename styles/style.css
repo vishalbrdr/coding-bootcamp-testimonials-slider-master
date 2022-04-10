@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+*,
+*::before,
+*::after {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 3.2rem;
+  padding: 2vw;
+  background-image: url(../images/pattern-bg.svg), url(../images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0, 0 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-position: 95% 0, 0 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  body {
+    background-position: 100% 0, 0 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    background-size: 80vw;
+    background-position: center 5%, bottom left;
+    font-size: 2.5rem;
+  }
+}
+
+.hidden {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75vw;
+  margin: 5rem auto 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  main {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    max-width: 90vw;
+    margin: auto;
+  }
+}
+
+.testimonial {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 40rem;
+  grid-gap: 2rem;
+  margin-right: -5rem;
+  position: relative;
+  z-index: 5;
+  background-image: url(../images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: 10rem 1rem;
+}
+
+.testimonial .comment {
+  font-weight: 300;
+}
+
+@media screen and (max-width: 850px) {
+  .testimonial {
+    margin-right: 0;
+    text-align: center;
+    background-position: center 5rem;
+  }
+}
+
+.testimonial .user {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .testimonial .user {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.testimonial .user__name {
+  color: #202046;
+  font-weight: 800;
+}
+
+.testimonial .user__role {
+  color: #babacf;
+}
+
+.image {
+  position: relative;
+}
+
+.image figure {
+  position: relative;
+}
+
+.image figure::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width: 300px;
+  background: #ccc;
+  -webkit-box-shadow: 0 15px 10px #ccc;
+  box-shadow: 0 15px 10px #ccc;
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+@media screen and (max-width: 850px) {
+  .image {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 60vw;
+    max-width: 500px;
+    margin-top: 5rem;
+  }
+  .image figure img {
+    max-width: 100%;
+  }
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 5rem;
+  -webkit-transform: translate(30%, 30%);
+          transform: translate(30%, 30%);
+  -webkit-box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+@media screen and (max-width: 850px) {
+  .buttons {
+    left: 50%;
+    -webkit-transform: translate(-50%, 30%) scale(0.8);
+            transform: translate(-50%, 30%) scale(0.8);
+  }
+}
+
+.buttons button {
+  background: none;
+  background-color: white;
+  border: none;
+  padding: 1.75rem 3rem;
+}
+
+.buttons button:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.buttons .prev {
+  padding-right: 2rem;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 5rem;
+}
+
+.buttons .next {
+  padding-left: 2rem;
+  border-bottom-right-radius: 5rem;
+  border-top-right-radius: 5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 4rem;
+  color: #babacf;
+}
+
+@media screen and (max-width: 850px) {
+  .attribution {
+    margin-top: 0;
+  }
+}
+
+.attribution a {
+  font-weight: bold;
+  color: inherit;
+}
+/*# sourceMappingURL=style.css.map */
