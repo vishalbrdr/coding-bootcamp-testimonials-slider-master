@@ -1,6 +1,6 @@
 # Frontend Mentor - Coding bootcamp testimonials slider solution
 
-This is a solution to the [Coding bootcamp testimonials slider challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Coding bootcamp testimonials slider challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -31,11 +31,10 @@ Users should be able to:
 
 ![](./images/screenshot.png)
 
-
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [GH Pages](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/vishalbrdr/coding-bootcamp-testimonials-slider-master)
+- Live Site URL: [GH Pages](https://vishalbrdr.github.io/coding-bootcamp-testimonials-slider-master/)
 
 ## My process
 
@@ -61,15 +60,17 @@ To see how you can add code snippets, see below:
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
+
 ```css
 .proud-of-this-css {
   color: papayawhip;
 }
 ```
+
 ```js
 const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+  console.log("🎉");
+};
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
